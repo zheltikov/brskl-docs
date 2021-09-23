@@ -25,12 +25,12 @@ The response format is as follows:
 type Field = { required: true };
 
 interface Response {
-    account?: {
+    account: {
         account?: Field,
         bank_bic?: Field,
         bank_name_full?: Field,
     };
-    doc2?: {
+    doc2: {
         authority_code?: Field,
         authority_name?: Field,
         birth_date?: Field,
@@ -43,7 +43,7 @@ interface Response {
         registration_place?: Field,
         series?: Field,
     };
-    party?: {
+    party: {
         actual_address?: Field,
         capital?: Field,
         inn?: Field,
@@ -60,7 +60,7 @@ interface Response {
         swift_bic?: Field,
         taxation_system?: Field,
     };
-    file?: {
+    file: {
         'physical-person-passport-page-1'?: Field,
         'physical-person-passport-page-2'?: Field,
     };
