@@ -1,7 +1,8 @@
 # Check the Party fields that need to be completed
 
-Endpoint: `/api/company/v2/dashboard/party/get-fields-to-complete`
 Method: `GET`
+
+Endpoint: `/api/company/v2/dashboard/party/get-fields-to-complete`
 
 Request format:
 
