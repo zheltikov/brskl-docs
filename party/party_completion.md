@@ -23,6 +23,7 @@ The response format is as follows:
 
 ```ts
 type Field = { required: true };
+type OptionalField = { required: false };
 
 interface Response {
     account: {
@@ -39,6 +40,7 @@ interface Response {
         issue_date?: Field,
         name_first?: Field,
         name_last?: Field,
+        name_middle?: OptionalField,
         number?: Field,
         registration_place?: Field,
         series?: Field,
