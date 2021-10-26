@@ -11,7 +11,7 @@
 <!-- /TOC -->
 
 An Item Movement operation consists of two operations tied together: one demand and one supply. These operations are
-coupled like so, the demand is the parent object, and the supply is the child object.
+coupled like so: the demand is the parent object, and the supply is the child object.
 
 ## List of operations
 
@@ -55,33 +55,33 @@ To do this, we only need the ID of the parent operation from the user.
 
 First, we need to get the parent demand operation:
 
-```http
+```yaml
 GET /api/company/v2/dashboard/item/movement/get-list
 
 fields: {
-  // all the necessary fields...
+          // all the necessary fields...
 },
 filters: {
   '!source': 'order',
   type: 'demand',
   '!child_count': 0,
-  id: {{ the id of the demand that the user supplied }}
+  id: // the id of the demand that the user supplied
 },
 limit: 1, // only select one operation
 ```
 
 Then, we need to get the child supply operation:
 
-```http
+```yaml
 GET /api/company/v2/dashboard/item/movement/get-list
 
 fields: {
-  // all the necessary fields...
+          // all the necessary fields...
 },
 filters: {
   '!source': 'order',
   type: 'supply',
-  parent_id: {{ the id of the demand that the user supplied }}
+  parent_id: // the id of the demand that the user supplied
 },
 limit: 1, // only select one operation
 ```
