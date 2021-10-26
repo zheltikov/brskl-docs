@@ -7,11 +7,14 @@
     - [Getting the data for an operation](#getting-the-data-for-an-operation)
     - [Creating an operation](#creating-an-operation)
     - [Updating an operation](#updating-an-operation)
+    - [Notes](#notes)
 
 <!-- /TOC -->
 
 An Item Movement operation consists of two operations tied together: one demand and one supply. These operations are
 coupled like so: the demand is the parent object, and the supply is the child object.
+
+See the [Notes](#notes) section for more details.
 
 ## List of operations
 
@@ -129,3 +132,13 @@ Then, to perform the actual update, do:
 2. Update the supply operation, with positive values.
 
 The endpoints for the updates are the same as the ones previously used.
+
+## Notes
+
+This new parent-child structure breaks compatibility with the existing functionality in the Supply and Demand sections.
+
+To avoid unintentionally having demands or supplies, that are part of a combined operation, listed in the of their
+respective sections, we need to add some additional filters to those sections:
+
+- For the Demands: ` filters: { child_count: 0 } `
+- For the Supplies: ` filters: { parent_id: 0 } `
