@@ -110,3 +110,27 @@ shape(
     ...,
 )
 ```
+
+Use the following endpoints to get and set these delivery settings for a Store.
+
+## Get delivery settings
+
+Method: `GET`  
+Endpoint: `/api/company/v2/dashboard/delivery/get`
+
+This endpoint expects the query parameter `store_id`, specifying whose Store's delivery settings to return.
+
+On success, this endpoint returns a data structure described by the schema above.
+
+If any error occurs, it is returned.
+
+## Set delivery settings
+
+Method: `POST`  
+Endpoint: `/api/company/v2/dashboard/delivery/set`
+
+This endpoint expects as input, a data structure described by the schema above.
+
+On success, this endpoint returns a successful message.
+
+If any error occurs, it is returned. 
