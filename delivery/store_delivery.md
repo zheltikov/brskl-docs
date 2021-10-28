@@ -19,10 +19,10 @@ shape(
         ),
         'radius' => 0 | (int & positive),
         
-        // Specifies the rates for this delivery.
+        // Specifies the rates for this delivery, as an array of objects.
         // This way you can specify different delivery tariffs based on
         // different order total amounts.
-        // There must be at least one rate specified.
+        // There must be at least one rate object specified.
         // The rates must not overlap, and the distance between the lower bound
         // of the one rate and the upper bound of the previous rate must be
         // exactly 1 monetary unit.
@@ -66,10 +66,10 @@ shape(
         ),
         'radius' => 0 | (int & positive),
         
-        // Specifies the rates for this delivery.
+        // Specifies the rates for this delivery, as an array of objects.
         // This way you can specify different delivery tariffs based on
         // different order total amounts.
-        // There must be at least one rate specified.
+        // There must be at least one rate object specified.
         // The rates must not overlap, and the distance between the lower bound
         // of the one rate and the upper bound of the previous rate must be
         // exactly 1 monetary unit.
