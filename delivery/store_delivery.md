@@ -24,8 +24,8 @@ shape(
         // different order total amounts.
         // There must be at least one rate object specified.
         // The rates must not overlap, and the distance between the lower bound
-        // of the one rate and the upper bound of the previous rate must be
-        // exactly 1 monetary unit.
+        // of one rate and the upper bound of the previous rate must be exactly
+        // 1 monetary unit.
         'rates' => array<
             shape(
                 // The upper and lower price bounds where this rate applies,
@@ -44,7 +44,7 @@ shape(
                 
                 // An additional value needed to calculate the delivery price.
                 // Depends on the value of the `calculation_type` field.
-                // This value can be zero if not additional value is needed.
+                // This value can be zero if no additional value is needed.
                 'calculation_val' => num & !negative,
                 
                 ...,
@@ -71,8 +71,8 @@ shape(
         // different order total amounts.
         // There must be at least one rate object specified.
         // The rates must not overlap, and the distance between the lower bound
-        // of the one rate and the upper bound of the previous rate must be
-        // exactly 1 monetary unit.
+        // of one rate and the upper bound of the previous rate must be exactly
+        // 1 monetary unit.
         'rates' => array<
             shape(
                 // The upper and lower price bounds where this rate applies,
@@ -91,7 +91,7 @@ shape(
                 
                 // An additional value needed to calculate the delivery price.
                 // Depends on the value of the `calculation_type` field.
-                // This value can be zero if not additional value is needed.
+                // This value can be zero if no additional value is needed.
                 'calculation_val' => num & !negative,
                 
                 ...,
