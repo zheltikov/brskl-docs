@@ -44,6 +44,9 @@ interface Request {
 
     // The format of the report files that you want
     export_format: 'csv' | 'xlsx';
+
+    // The authorization token needed to download the file
+    token: string;
 }
 ```
 
