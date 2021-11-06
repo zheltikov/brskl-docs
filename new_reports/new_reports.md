@@ -12,7 +12,7 @@ We need to [select a report type](new_reports__type_selection.md):
 
 ![Report Selection](images/new_reports_002.jpg "Report Selection")
 
-Then, we need to configure the report parameters:
+Then, we need to [configure the report parameters](new_reports__parameter_configuration.md):
 
 ![Report Parameters](images/new_reports_003.jpg "Report Parameters")
 
