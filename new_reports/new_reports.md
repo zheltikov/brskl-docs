@@ -8,7 +8,7 @@ First, we are greeted by this screen:
 
 ![First Screen](images/new_reports_001.jpg "First Screen")
 
-We need to select a report type:
+We need to [select a report type](new_reports__type_selection.md):
 
 ![Report Selection](images/new_reports_002.jpg "Report Selection")
 
