@@ -22,10 +22,10 @@ When that's done, we are ready to generate the report:
 
 ![Second Screen](images/new_reports_004.jpg "Second Screen")
 
-The report is generated and shown in a table like this:
+The report is [generated and shown](new_reports__generation_and_display.md) in a table like this:
 
 ![Report Table](images/new_reports_005.jpg "Report Table")
 
-With a generated report, we can download it:
+With a generated report, we can [download it](new_reports__download.md):
 
 ![Report Download](images/new_reports_006.jpg "Report Download")
