@@ -84,7 +84,7 @@ When you got the request parameters, you are ready to request the actual report 
 
 To do so, request this endpoint:
 
-Method: `GET`
+Method: `GET`  
 Endpoint: `/api/company/v2/dashboard/reports/orders/generate-report`
 
 Provide it the following query parameters:
