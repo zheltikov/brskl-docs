@@ -141,10 +141,12 @@ In this first iteration of this functionality, this is the **manual** mapping th
 Parameters configured by the user to the Fetch Parameters for the report generation:
 
 - `customer`: Maps to a string, in the `customer_id` filter.
-- `grouping`: Maps a string in the `grouping` root section. For example: `{ fields, filters, grouping: ['days'] }`
+- `grouping`: Maps a string in the `grouping` root section. For
+  example: `{ fields: {...}, filters: {...}, grouping: ['days'] }`
 - `payment_service`: Maps to the `payment_service` filter.
 - `period`: May be mapped to two different start-end pairs of filters. Use the pair `date_start` and `date_end` if its
-  present, otherwise use `timestamp_inserting_start` and `timestamp_inserting_end`.
+  present, otherwise use `timestamp_inserting_start` and `timestamp_inserting_end`. The format of the datetime strings
+  should be: `Y-m-d H:i:s`, for example: `2021-11-06 19:30:00`.
 - `status`: Maps to the `status` filter.
 - `store`: Maps to an integer, in the `store_id` filter.
 - `type`:  Maps to the `type` filter.
