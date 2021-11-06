@@ -6,3 +6,4 @@ Here you will find lots of documentation:
 - [Party](party/README.md)
 - [Payments](payments/README.md)
 - [Delivery](delivery/README.md)
+- [New Reports](new_reports/README.md)
