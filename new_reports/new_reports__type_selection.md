@@ -16,11 +16,12 @@ shape(
     // All the possible report types
     'report_types' => array<string>,
     
-    // Some additional configuration for each report type
+    // A dictionary with some additional configuration for each report type
     'extra_config' => array<
         // The report type as the key
         string,
         
+        // The config as the value
         shape(
             // The `status` key describes whether this report type is
             // enabled (1) or disabled (0)
@@ -37,7 +38,7 @@ shape(
 We will then need to render only the reports that are in the `report_types` array and the ones that have `status: 1`
 in their `extra_config`.
 
-For example, we will get a response like this:
+For example, we will get a response like this one:
 
 ```json5
 {
